@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/service/common.service';
 
 @Component({
   selector: 'app-outbound',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutboundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: CommonService) { }
 
+  data;
+  formValue;
   ngOnInit() {
+    this.data = this.service.getInbounds();
+    this.formValue = this.service.inbound_form;
   }
+
 
 }

@@ -2,7 +2,16 @@
 @import 'app.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
-body{
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page {
+  margin: 20px;
+}
+
+.hori_scroll {
+  width: 100%;
+  overflow: auto;
 }

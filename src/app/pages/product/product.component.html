@@ -1,0 +1,56 @@
+<div>
+  <button class="btn btn-primary" routerLink="/scan/{{goto}}">Rescan</button> &nbsp;
+  <button class="btn btn-success" *ngIf="product != undefined">Confirm</button>
+  <button class="btn btn-danger" *ngIf="product == undefined">Add Product</button>
+
+  <br><br>
+  <div class="alert alert-danger" *ngIf="product == undefined">There is no product with the code {{code}}. Click Rescan
+    or Add Product.</div>
+  
+  <div *ngIf="product != undefined">
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Product Name</div>
+          <div class="value">{{product.name}}</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Code</div>
+          <div class="value">{{product.code}}</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Container Number</div>
+          <div class="value">{{product.container_no}}</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Container Type</div>
+          <div class="value">{{product.container_type}}</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Quantity</div>
+          <div class="value">{{product.quantity}} {{product.unit}}</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="grp">
+          <div class="label">Waste Code</div>
+          <div class="value">{{product.waste_code}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
