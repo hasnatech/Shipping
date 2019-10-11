@@ -668,6 +668,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ScanComponent = /** @class */ (function () {
     function ScanComponent() {
+        this.output = "Scanning...";
     }
     ScanComponent.prototype.ngOnInit = function () {
         var ths = this;
@@ -700,7 +701,7 @@ var ScanComponent = /** @class */ (function () {
                 //Quagga.stop();
                 console.log(ths);
                 console.log("Code Detected: " + code);
-                this.output = "Code Detected: " + code;
+                ths.output = "Code Detected: " + code;
             }
         });
     };
