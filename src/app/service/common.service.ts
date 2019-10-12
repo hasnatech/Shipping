@@ -37,7 +37,7 @@ export class CommonService {
   },{
     name:"Product 1",
     code:"10001",
-    container_no:"001",
+    container_no:"001", 
     container_type:"DM",
     quantity:"50",
     unit:"",
