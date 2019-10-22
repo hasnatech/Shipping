@@ -985,7 +985,7 @@ var CommonService = /** @class */ (function () {
                 waste_code: "400"
             }, {
                 name: "World Oil Environmental Services",
-                code: "CAD028277036 ",
+                code: "CAD028277036",
                 container_no: "CH00109 ",
                 container_type: "DM ",
                 quantity: "71 ",
